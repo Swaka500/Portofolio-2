@@ -5,10 +5,10 @@ const services = [
     icon: "🌐"
   },
   {
-  title: "Business Analysis",
-  desc: "Improve decisions using data, process insights, and strategy.",
-  icon: "📊"
-},
+    title: "Business Analysis",
+    desc: "Improve decisions using data, process insights, and strategy.",
+    icon: "📊"
+  },
   {
     title: "UI/UX Design",
     desc: "Beautiful and user-friendly designs that convert visitors.",
@@ -23,33 +23,32 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="py-24 bg-[#0b0f19] text-white">
+    <section className="py-20 bg-[#0b0f19] text-white">
       <div className="max-w-7xl mx-auto px-6">
 
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
+        <h2 className="text-3xl md:text-5xl font-bold text-center mb-14">
           My Services
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
           {services.map((service, index) => (
             <div
               key={index}
               className="
-                group p-10 rounded-2xl bg-white/5 backdrop-blur-md 
-                border border-white/10 transition duration-500 
-                hover:scale-110 hover:bg-blue-600/20 
-                hover:shadow-[0_0_40px_rgba(59,130,246,0.6)]
-                cursor-pointer
+                p-8 rounded-2xl bg-white/5 backdrop-blur-md 
+                border border-white/10 transition duration-300 
+                hover:bg-white/10 hover:shadow-lg
+                hover:border-white/20 cursor-pointer
               "
             >
-              <div className="text-5xl mb-6">{service.icon}</div>
+              <div className="text-4xl mb-5">{service.icon}</div>
 
-              <h3 className="text-2xl font-semibold mb-4 group-hover:text-blue-400">
+              <h3 className="text-xl font-semibold mb-3">
                 {service.title}
               </h3>
 
-              <p className="text-gray-400 group-hover:text-gray-200">
+              <p className="text-gray-400 text-sm leading-relaxed">
                 {service.desc}
               </p>
             </div>
