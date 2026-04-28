@@ -1,9 +1,10 @@
 {
+  "homepage": "https://swaka500.github.io/Portofolio-2",
   "name": "myproject",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://swaka500.github.io/Portofolio-2",
+  
   "scripts": {
     "dev": "vite",
     "build": "vite build",
